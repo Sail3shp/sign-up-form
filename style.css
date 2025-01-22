@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Thor';
+    src: url('Norse-Bold.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex; 
+    flex-wrap: wrap; 
+    height: 100vh; 
+}
+
+#left-side {
+    width: 30vw; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+#left-side img {
+    width: 100%; 
+    height: 100%; 
+}
+
+#left-side{
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+}
+
+#right-side {
+    width: 70vw; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    /*padding: 20px; */
+    box-sizing: border-box; 
+}
+
+#heading {
+    flex-grow: 1; 
+    margin-bottom: 20px; 
+}
+#heading p{
+    margin-left:200px;
+    margin-top: 100px;
+    font-size:large;
+    font-weight: bold;
+}
+
+#forms {
+    flex-grow: 1; 
+    background-color: white;
+    box-shadow: 1px 6px 5px wheat;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    width:100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+input {
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width:80%;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding:10px;
+}
+.form-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-group{
+    width:48%;
+}
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus,
+.form-row input[type='number']:focus{
+    border:1px solid blue;
+    box-shadow: 1px 5px 5px #ccc;
+}
+/*to remove default green from browsers */
+input:focus-visible{
+    outline:none;
+}
+/*.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid,
+.form-row input[type='number']:invalid{
+    border:1px solid red;
+}*/
+div input[type='button']{
+    background-color: #596D48;
+    width:20%;
+    color: white;
+    box-shadow: 5px 5px 5px #ccc;
+    cursor: pointer;
+    font-size: 1rem;
+}
+input[type='password']:invalid{
+    border: 1px solid red;
+}
+input[type='button']:hover{
+    background-color:#77B254 ;
+    font-size: 1rem;
+}
+span{
+    color:#596D48;
+    font-weight: bold;
+}
+p{
+    font-size:1.rem
+}
+.footer{
+    padding:20px;
+
+}
+h1{
+    color:white;
+    display: flex;
+    align-items: center;
+    margin-left:50px;
+    line-height: 20px;
+}
+h1 img{
+    max-height: 100px;
+    max-width: 100px;
+}
+#logo{
+    margin-top:30vh;
+    width:100%;
+    text-align: center;
+    background-color: rgba(15, 13, 13, 0.31);
+    font-size:2rem;
+    letter-spacing: 0.5em;
+    padding:10px;
+    font-family: 'Thor',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
